@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    position: relative;
+    height: 80vh;
+}
+
+.card {
+    /* border: 1px solid red; */
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+     
+}
+
+.search {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.search input {
+    width: 80%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background: #ebfffc;
+    color: #555;
+    height: 60px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+
+}
+
+.search button {
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background: #ebfffc;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search img {
+    display: flex;
+    margin: auto;
+    width: 28px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,.wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+.error{ 
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+
+}
+
+
+
+ /* Styling for the footer link and heart */
+ .su {    
+
+    position: absolute;  
+    bottom: 10px; /* Adjust this for proper spacing */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    text-align: center;  
+    width: 100%;
+     
+}
+
+
+.custom-link {
+    color: white; /* Text color */
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; /* Remove underline */
+   
+   
+}
+
+.custom-link .heart {
+    color: red; /* Heart color */
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+     
+    /* Responsive design for mobile screens */
+    @media (max-width: 576px) {
+        .search input {
+            
+            padding: 5px 10px;
+            height: 35px;
+            font-size: 10px;
+        
+        }
+        .search button {
+            outline: none;
+            border: none;
+            border-radius: 50%;
+            background: #ebfffc;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        .search img {
+            display: flex;
+            margin: auto;
+            width: 20px;
+        }
+        
+        .su {
+            position: absolute;  /* Fix it at the bottom */
+            bottom: 10px;        /* Keep it 10px from the bottom */
+            /* border: 1px solid red; */
+            padding: 0px;
+                   
+                        
+        }
+        
+        .custom-link{
+            text-align: center;
+            /* border: 1px solid red; */
+        }
+
+        .card {
+            /* border: 1px solid red; */
+            width: 100%;
+            margin-bottom: 100px;
+          
+        }
+        body{padding: 10px;
+        height: 100vh;}
+        .humidity,.wind{
+            font-size: 20px;
+            margin-top: -6px;
+        }
+        .col img{
+            width: 24px;
+            margin-right: 12px;
+        }
+
+        .weather-icon {
+            width: 150px;
+            
+        }
+        
+        .weather h1 {
+            font-size: 40px;
+            font-weight: 500;
+        }
+        
+        .weather h2 {
+            font-size: 25px;
+            font-weight: 400;
+            margin-top: -10px;
+        }
+        
+    }
